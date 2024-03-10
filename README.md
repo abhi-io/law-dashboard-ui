@@ -1,9 +1,12 @@
-# Dashcode Nextjs Admin Template
+# Template
+ 
 
-[![TechAI Demo](https://raw.githubusercontent.com/UsmanLiaqat404/dashcode-nextjs-admin-template/main/public/assets/images/demo/demo.png)](https://dash-next2.vercel.app)
+## how to run ?
+```
+docker run -it --rm --net host -p 3000:3000  -p 3001:3001 -v $(pwd):/ap node:18 bash
 
-## Show Your Support
+cd ap
+yarn install
+yarn dev
 
-If you find this project helpful, please consider starring the repository to show your support and to stay updated with its progress.
-
-[![GitHub stars](https://img.shields.io/github/stars/UsmanLiaqat404/dashcode-nextjs-admin-template.svg?style=social)](https://github.com/UsmanLiaqat404/dashcode-nextjs-admin-template/stargazers)
+```
