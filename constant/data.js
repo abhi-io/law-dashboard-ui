@@ -997,3 +997,31 @@ export const files = [
     date: "06 June 2021 / 155MB",
   },
 ];
+
+export const MainBranchesOfLaw = [
+  {
+    img: "/assets/images/icon/file-1.svg",
+    title: "Civil Law",
+    date: "06 Mar 2024 / 155MB",
+  },
+  {
+    img: "/assets/images/icon/pdf-1.svg",
+    title: "Criminal Law",
+    date: "06 Mar 2024 / 155MB",
+  },
+  {
+    img: "/assets/images/icon/zip-1.svg",
+    title: "Corporate Law",
+    date: "06 Mar 2024 / 155MB",
+  },
+  {
+    img: "/assets/images/icon/pdf-2.svg",
+    title: "Intellectual Property Law",
+    date: "06 Mar 2024 / 155MB",
+  },
+  {
+    img: "/assets/images/icon/scr-1.svg",
+    title: "International Law",
+    date: "06 Mar 2024 / 155MB",
+  },
+];
