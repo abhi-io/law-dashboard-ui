@@ -99,6 +99,16 @@ export const menuItems = [
     title: "Pages",
   },
   {
+    title: "Work Space",
+    icon: "heroicons-outline:briefcase",
+    link: "research", 
+  },
+  {
+    title: "Analytics",
+    icon: "heroicons-outline:circle-stack",
+    link: "Analytics", 
+  },
+  {
     title: "Authentication",
     icon: "heroicons-outline:lock-closed",
     link: "#",
