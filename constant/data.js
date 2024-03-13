@@ -101,12 +101,12 @@ export const menuItems = [
   {
     title: "Work Space",
     icon: "heroicons-outline:briefcase",
-    link: "research", 
+    link: "workspace", 
   },
   {
-    title: "Analytics",
+    title: "Law Analytics",
     icon: "heroicons-outline:circle-stack",
-    link: "Analytics", 
+    link: "legalanalytics", 
   },
   {
     title: "Authentication",
