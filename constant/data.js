@@ -14,10 +14,10 @@ export const menuItems = [
         childtitle: "Analytics Dashboard",
         childlink: "analytics",
       },
-      {
-        childtitle: "Ecommerce Dashboard",
-        childlink: "ecommerce",
-      },
+      // {
+      //   childtitle: "Ecommerce Dashboard",
+      //   childlink: "ecommerce",
+      // },
       {
         childtitle: "Project  Dashbaord",
         childlink: "project",

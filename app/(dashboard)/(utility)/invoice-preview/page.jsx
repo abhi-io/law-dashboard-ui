@@ -60,7 +60,7 @@ const InvoicePreviewPage = () => {
             />
 
             <div className="text-slate-500 dark:text-slate-300 font-normal leading-5 mt-4 text-sm">
-              Dashcode <br />
+              HashRaft <br />
               House# 339, New DOHS, Mohakhali, <br />
               Dhaka - 1206, Bangladesh
               <div className="flex space-x-2 mt-2 leading-[1] rtl:space-x-reverse">
@@ -69,7 +69,7 @@ const InvoicePreviewPage = () => {
               </div>
               <div className="mt-[6px] flex space-x-2 leading-[1] rtl:space-x-reverse">
                 <Icon icon="heroicons-outline:mail" />
-                <span>Dashcode@example.com</span>
+                <span>HashRaft@example.com</span>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const InvoicePreviewPage = () => {
               </div>
               <div className="mt-[6px] flex space-x-2 leading-[1] rtl:space-x-reverse">
                 <Icon icon="heroicons-outline:mail" />
-                <span>Dashcode@example.com</span>
+                <span>HashRaft@example.com</span>
               </div>
             </div>
           </div>

@@ -60,7 +60,7 @@ const Register = () => {
                 <div className="text-center 2xl:mb-10 mb-5">
                   <h4 className="font-medium">Sign up</h4>
                   <div className="text-slate-500 dark:text-slate-400 text-base">
-                    Create an account to start using Dashcode
+                    Create an account to start using HashRaft
                   </div>
                 </div>
                 <RegForm />
@@ -83,7 +83,7 @@ const Register = () => {
                 </div>
               </div>
               <div className="auth-footer text-center">
-                Copyright 2021, Dashcode All Rights Reserved.
+                Copyright 2021, HashRaft All Rights Reserved.
               </div>
             </div>
           </div>

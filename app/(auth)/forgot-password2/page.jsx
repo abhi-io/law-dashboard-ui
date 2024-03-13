@@ -28,7 +28,7 @@ const ForgotPass2 = () => {
               <div className="text-center 2xl:mb-10 mb-5">
                 <h4 className="font-medium mb-4">Forgot Your Password?</h4>
                 <div className="text-slate-500 dark:text-slate-400 text-base">
-                  Reset Password with Dashcode.
+                  Reset Password with HashRaft.
                 </div>
               </div>
               <div className="font-normal text-base text-slate-500 dark:text-slate-400 text-center px-2 bg-slate-100 dark:bg-slate-600 rounded py-3 mb-4 mt-10">
@@ -48,7 +48,7 @@ const ForgotPass2 = () => {
               </div>
             </div>
             <div className="auth-footer text-center">
-              Copyright 2021, Dashcode All Rights Reserved.
+              Copyright 2021, HashRaft All Rights Reserved.
             </div>
           </div>
         </div>

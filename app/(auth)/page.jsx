@@ -59,7 +59,7 @@ const Login = () => {
                 <div className="text-center 2xl:mb-10 mb-4">
                   <h4 className="font-medium">Sign in</h4>
                   <div className="text-slate-500 text-base">
-                    Sign in to your account to start using Dashcodess
+                    Sign in to your account to start using HashRaft
                   </div>
                 </div>
                 <LoginForm />
@@ -82,7 +82,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="auth-footer text-center">
-                Copyright 2021, Dashcode All Rights Reserved.
+                Copyright 2021, HashRaft All Rights Reserved.
               </div>
             </div>
           </div>
