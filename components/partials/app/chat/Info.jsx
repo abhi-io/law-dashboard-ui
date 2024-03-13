@@ -50,7 +50,7 @@ const Info = () => {
             />
             <span>Location</span>
           </div>
-          <div className="font-medium">Bangladesh</div>
+          <div className="font-medium">Bangalore</div>
         </li>
         <li className="flex justify-between text-sm text-slate-600 dark:text-slate-300 leading-[1]">
           <div className="flex space-x-2 items-start rtl:space-x-reverse">

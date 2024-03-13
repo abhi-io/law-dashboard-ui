@@ -83,7 +83,7 @@ const profile = () => {
                       href="mailto:someone@example.com"
                       className="text-base text-slate-600 dark:text-slate-50"
                     >
-                      info-500@dashcode.com
+                      info-500@hashraft.com
                     </a>
                   </div>
                 </li>
@@ -114,7 +114,7 @@ const profile = () => {
                       LOCATION
                     </div>
                     <div className="text-base text-slate-600 dark:text-slate-50">
-                      Home# 320/N, Road# 71/B, Mohakhali, Dhaka-1207, Bangladesh
+                      Home# 320/N, Road# 71/B, Mohakhali, HSR layout, Bangalore
                     </div>
                   </div>
                 </li>
