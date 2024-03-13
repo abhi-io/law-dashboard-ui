@@ -217,7 +217,7 @@ const statistics = [
   },
   {
     name: shapeLine2,
-    title: "Products sold",
+    title: "Number of cases",
     count: "564",
     bg: "bg-[#FFEDE6] dark:bg-slate-900	",
     text: "text-warning-500",

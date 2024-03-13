@@ -44,7 +44,7 @@ const COLUMNS = [
     Header: "Category",
     accessor: "category",
     Cell: (row) => {
-      return <span>Technology</span>;
+      return <span>Advocate</span>;
     },
   },
   {
