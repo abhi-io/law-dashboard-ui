@@ -13,7 +13,7 @@ import { meets, files, MainBranchesOfLaw } from "@/constant/data";
 import CalendarView from "@/components/partials/widget/CalendarView";
 import HomeBredCurbs from "@/components/partials/HomeBredCurbs";
 
-
+import LegalAnalyticsTable from './featureList'
 
 const ProjectPage = () => {
   return (
@@ -22,7 +22,8 @@ const ProjectPage = () => {
       <div className="grid grid-cols-12 gap-5">
         <div className="xl:col-span-8 lg:col-span-7 col-span-12">
           <Card title="Legal Analysts" noborder>
-            <TeamTable />
+            {/* <TeamTable /> */}
+            <LegalAnalyticsTable />
           </Card>
         </div>
         <div className="xl:col-span-4 lg:col-span-5 col-span-12">

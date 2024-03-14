@@ -26,9 +26,9 @@ const Login = () => {
                 />
               </Link>
               <h4>
-                Unlock your Project{" "}
+              Unleash the power of{" "}
                 <span className="text-slate-800 dark:text-slate-400 font-bold">
-                  performance
+                Legal Analytics
                 </span>
               </h4>
             </div>
