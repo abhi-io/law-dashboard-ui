@@ -13,11 +13,13 @@ import { meets, files } from "@/constant/data";
 import CalendarView from "@/components/partials/widget/CalendarView";
 import HomeBredCurbs from "@/components/partials/HomeBredCurbs";
 
+import  SearchComponent  from "./viewTable";
+
 const ProjectPage = () => {
   return (
     <div className="space-y-5">
-      <HomeBredCurbs title="Project" />
-      <div className="grid grid-cols-12 gap-5">
+      <HomeBredCurbs title="Search " />
+      {/* <div className="grid grid-cols-12 gap-5">
         <div className="lg:col-span-8 col-span-12 space-y-5">
           <Card>
             <div className="grid grid-cols-12 gap-5">
@@ -83,25 +85,15 @@ const ProjectPage = () => {
             </ul>
           </Card>
         </div>
-      </div>
-      <div className="grid xl:grid-cols-3 grid-cols-1 gap-5">
-        <Card title="Task list" headerslot={<SelectMonth />}>
-          <TaskLists />
-        </Card>
-        <Card title="Messages" headerslot={<SelectMonth />}>
-          <MessageList />
-        </Card>
-        <Card title="Activity" headerslot={<SelectMonth />}>
-          <TrackingParcel />
-        </Card>
-      </div>
+      </div> */}
+       
       <div className="grid grid-cols-12 gap-5">
-        <div className="xl:col-span-8 lg:col-span-7 col-span-12">
-          <Card title="Team members" noborder>
-            <TeamTable />
+        <div className="xl:col-span-12 lg:col-span-12 col-span-12">
+          <Card title="Search Results" noborder>
+            <SearchComponent />
           </Card>
         </div>
-        <div className="xl:col-span-4 lg:col-span-5 col-span-12">
+        <div className="xl:col-span-12 lg:col-span-2 col-span-12">
           <Card title="Files" headerslot={<SelectMonth />}>
             <ul className="divide-y divide-slate-100 dark:divide-slate-700">
               {files.map((item, i) => (

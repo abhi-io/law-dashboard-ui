@@ -109,6 +109,11 @@ export const menuItems = [
     link: "legalanalytics", 
   },
   {
+    title: "Search",
+    icon: "heroicons-outline:magnifying-glass",
+    link: "search", 
+  },
+  {
     title: "Authentication",
     icon: "heroicons-outline:lock-closed",
     link: "#",
