@@ -3,20 +3,24 @@ import axiosInstance from '../../../components/axiosInstance';
 
 const SearchComponent = () => {
   const [data, setData] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('letter-box provided by the Post'); // default search term
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
+    setLoading(true);
       try {
         // Using the Axios instance to make a GET request
         const response = await axiosInstance.get('search', {
           params: {
-            word: 'delivery',
+            word: searchTerm,
           },
         });
         setData(response.data);
-        console.log(data);
+        console.log(data); 
+        // const documentsData = response.data.slice(1);
+        // setDocuments(documentsData);
       } catch (err) {
         setError('Error fetching data');
         console.error(err);
@@ -26,26 +30,46 @@ const SearchComponent = () => {
     };
   
     fetchData();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, [searchTerm]); // Dependency on searchTerm, so it refetches when searchTerm changes
+  
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // Triggering the useEffect by changing searchTerm is enough for a new search
+  };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
-
+//   if (loading) return <div>Loading...</div>;
+//   if (error) return <div>{error}</div>;
+ 
   return (
-<div>
-      <h1>Search Results</h1>
-      {data.length > 0 ? (
+<div> 
+      <form onSubmit={handleSearchSubmit}>
+        <input
+          type="text"
+        //   value={searchTerm}
+          onChange={handleSearchChange}
+          placeholder="Enter search term..."
+        />
+        <button type="submit" >Search</button>
+      </form>
+      
+      {loading ? (
+        <div>Loading...</div>
+      ) :  (
         <div>
-            <p>Items Found: {data[0]}</p>
+           {data.length > 0 ? (
             <table>
-            <thead>
+                <p>Items Found: {data[0]}</p>
+              <thead>
                 <tr>
-                <th>ID</th>
-                <th>Field Name</th>
-                <th>Value</th>
+                  <th>Document ID</th>
+                  <th>Field Name</th>
+                  <th>Value</th>
                 </tr>
-            </thead>
-            <tbody>
+              </thead>
+              <tbody>
                 {data.map((doc, index) => doc.document_id && (
                 <tr key={index}>
                     <td>{doc.document_id.$oid}</td>
@@ -55,9 +79,10 @@ const SearchComponent = () => {
                 ))}
             </tbody>
             </table>
+          ) : (
+            <p>No data found.</p>
+          )}
         </div>
-      ) : (
-        <p>No data found.</p>
       )}
     </div>
   );
