@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../../components/axiosInstance';  
 
+import HighlightedResponse from './utils';
+
 const SearchComponent = () => {
   const [data, setData] = useState(null);
   const [searchTerm, setSearchTerm] = useState('letter-box provided by the Post'); // default search term
@@ -74,7 +76,7 @@ const SearchComponent = () => {
                 <tr key={index}>
                     <td>{doc.document_id.$oid}</td>
                     <td>{doc.field_name}</td>
-                    <td>{doc.value}</td>
+                    <td><HighlightedResponse  doc={doc.value} searchTerm={searchTerm} /></td>
                 </tr>
                 ))}
             </tbody>
